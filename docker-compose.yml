@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  terraform:
+    image: hashicorp/terraform
+    entrypoint: ''
+    command: tail -f /dev/null
+    working_dir: /app
+    volumes:
+    - .:/app
